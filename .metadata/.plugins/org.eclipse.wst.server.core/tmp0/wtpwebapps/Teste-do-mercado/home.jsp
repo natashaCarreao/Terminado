@@ -10,7 +10,7 @@
 </head>
 <body>
 <%@ include file="menu.jsp" %>
-<div class="container">
+<div class="container" align="center">
 	<h1>Bem vindo ao Mercado on-line!</h1>
 	<h6><strong>Aqui você compra e vende oque precisa!</strong></h6>
 </div>

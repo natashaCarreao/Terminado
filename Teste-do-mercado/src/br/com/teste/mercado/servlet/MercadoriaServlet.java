@@ -29,11 +29,15 @@ public class MercadoriaServlet extends HttpServlet {
 		String acao = request.getParameter("acao");
 		
 		switch (acao) {
+			case "listarMercDisp":
+				listar(request);
+				retorno  = "listarMercadorias.jsp";
+				break;
 			case "vender":
-			retorno = "";	
+				retorno = "";	
 		}
 		
-		doGet(request, response);
+		request.getRequestDispatcher(retorno).forward(request, response);
 	}
 
 	private void listar(HttpServletRequest request){

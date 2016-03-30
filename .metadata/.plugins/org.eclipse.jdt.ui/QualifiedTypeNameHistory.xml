@@ -2,9 +2,9 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="br.com.teste.mercado.enumeration.TipoNegocio"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="br.com.teste.mercado.bean.Mercadoria"/>
 <fullyQualifiedTypeName name="br.com.teste.mercado.enumeration.Tipo"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="br.com.teste.mercado.bo.MercadoriaBO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.teste.mercado.bean.Mercadoria"/>
 </qualifiedTypeNameHistroy>

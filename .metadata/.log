@@ -35,3 +35,99 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-03-30 17:46:54.075
 !MESSAGE Port 8080 required by Tomcat v7.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.jee 4 0 2016-03-30 19:02:40.151
+!MESSAGE [Working copy] __2F_Teste_2D_do_2D_mercado_2F_WebContent_2F_menu_2E_jsp.java [in <default> [in src [in Teste-do-mercado]]] does not exist
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] __2F_Teste_2D_do_2D_mercado_2F_WebContent_2F_menu_2E_jsp.java [in <default> [in src [in Teste-do-mercado]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:566)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:247)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:107)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:316)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:302)
+	at org.eclipse.jdt.internal.core.SourceType.getAnnotations(SourceType.java:200)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.createJavaeeObject(WebAnnotationReader.java:152)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.analyzeCompilationUnit(WebAnnotationReader.java:145)
+	at org.eclipse.jst.jee.model.internal.WebAnnotationReader.processAddedCompilationUnit(WebAnnotationReader.java:257)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:543)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessCompilationUnits(AbstractAnnotationModelProvider.java:562)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:519)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.recursevilyProcessPackages(AbstractAnnotationModelProvider.java:527)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProjectChildren(AbstractAnnotationModelProvider.java:501)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.processChangedProject(AbstractAnnotationModelProvider.java:492)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.internalPostChange(AbstractAnnotationModelProvider.java:457)
+	at org.eclipse.jst.jee.model.internal.common.AbstractAnnotationModelProvider.elementChanged(AbstractAnnotationModelProvider.java:448)
+	at org.eclipse.jdt.internal.core.DeltaProcessor$3.run(DeltaProcessor.java:1662)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.notifyListeners(DeltaProcessor.java:1652)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.firePostChangeDelta(DeltaProcessor.java:1486)
+	at org.eclipse.jdt.internal.core.DeltaProcessor.fire(DeltaProcessor.java:1462)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:770)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5409)
+	at org.eclipse.jst.jsp.core.internal.validation.JSPBatchValidator.validate(JSPBatchValidator.java:528)
+	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1159)
+	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:351)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:63)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:74)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:47)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2016-03-30 19:02:40.168
+!MESSAGE [Working copy] __2F_Teste_2D_do_2D_mercado_2F_WebContent_2F_menu_2E_jsp.java [in <default> [in src [in Teste-do-mercado]]] does not exist
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2016-03-30 19:24:30.363
+!MESSAGE Taglib Index ZipException: C:/Users/Natasha/Documents/teste-do-mercado/Teste-do-mercado/taglibs-standard-jstlel-1.2.5.jar zip file is empty
+
+!ENTRY org.eclipse.jst.jsp.core 2 2 2016-03-30 19:24:30.393
+!MESSAGE Taglib Index ZipException: C:/Users/Natasha/Documents/teste-do-mercado/Teste-do-mercado/taglibs-standard-spec-1.2.5.jar zip file is empty
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:24:30.601
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:24:30.615
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:27:02.366
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:27:02.396
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:17.847
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:17.880
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:17.895
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:17.908
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:17.981
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:18.005
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:18.485
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:18.497
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:24.035
+!MESSAGE Invalid ZIP archive: taglibs-standard-jstlel-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jdt.core 4 0 2016-03-30 19:30:24.076
+!MESSAGE Invalid ZIP archive: taglibs-standard-spec-1.2.5.jar [in Teste-do-mercado]
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-03-30 20:04:51.211
+!MESSAGE Several ports (8081, 8009) required by Tomcat v7.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
