@@ -1,0 +1,11 @@
+package br.com.teste.mercado.bean;
+
+public class Mercadoria {
+	
+	private int codigo;
+	private String tipo;
+	private String nome;
+	private int quantidade;
+	private Double preco;
+	
+}

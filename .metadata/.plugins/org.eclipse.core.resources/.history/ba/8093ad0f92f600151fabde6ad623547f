@@ -1,0 +1,28 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<div class="navbar navbar-inverse">
+	<div class="container">
+		<a href="home.jsp" class="navbar-brand">FIAP Motors</a>
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Carros <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li> <a href="CarroServlet?acao=exibirFormulario">Cadastrar</a> </li>
+					<li> <a href="CarroServlet?acao=listar">Listar</a> </li>
+				</ul>	
+			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Marcas <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li> <a href="formularioMarca.jsp">Cadastrar</a> </li>
+					<li> <a href="MarcaServlet?acao=listar">Listar</a> </li>
+				</ul>	
+			</li>
+		</ul>
+		
+	</div>
+</div>
+

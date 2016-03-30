@@ -1,0 +1,11 @@
+package br.com.teste.mercado.bo;
+
+import java.util.ArrayList;
+
+import br.com.teste.mercado.bean.Mercadoria;
+
+public class MercadoriaBO {
+	
+	private ArrayList<Mercadoria> listaMercadorias = new ArrayList<Mercadoria>();
+
+}

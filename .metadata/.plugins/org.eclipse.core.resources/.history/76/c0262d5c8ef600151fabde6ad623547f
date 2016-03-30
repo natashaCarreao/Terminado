@@ -1,0 +1,34 @@
+package br.com.teste.mercado.bo;
+
+import java.util.ArrayList;
+
+import br.com.teste.mercado.bean.Mercadoria;
+
+public class MercadoriaBO {
+	
+	private ArrayList<Mercadoria> listaMercadorias = new ArrayList<Mercadoria>();
+	private static int sequence = 1;
+	
+	public ArrayList<Mercadoria> buscarTodas(){
+		return listaMercadorias;
+	}
+	
+	
+	
+	
+	
+	
+	
+	private ArrayList<Mercadoria> carregarListaMercadorias(){
+		Mercadoria merc1 = new Mercadoria();
+		
+		merc1.setCodigo(sequence++);
+		merc1.setNome("Tevevisão Led 32'");
+		merc1.setPreco(1700.00);
+		merc1.setQuantidade(4);
+		merc1.getTipo();
+		
+		return listaMercadorias;
+	}
+
+}
