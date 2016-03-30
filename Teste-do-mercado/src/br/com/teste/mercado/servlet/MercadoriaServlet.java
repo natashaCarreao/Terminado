@@ -1,12 +1,15 @@
 package br.com.teste.mercado.servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.teste.mercado.bean.Mercadoria;
 import br.com.teste.mercado.bo.MercadoriaBO;
 
 /**
@@ -22,8 +25,23 @@ public class MercadoriaServlet extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String retorno = "";
+		String acao = request.getParameter("acao");
+		
+		switch (acao) {
+			case "vender":
+			retorno = "";	
+		}
+		
 		doGet(request, response);
 	}
 
+	private void listar(HttpServletRequest request){
+		ArrayList<Mercadoria> lista = mercadoriaBO.buscarTodas();
+		request.setAttribute("lista", lista);
+	}
+	
+	private void vender(HttpServletRequest request){
+		
+	}
 }

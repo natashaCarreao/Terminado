@@ -1,7 +1,7 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <div class="navbar navbar-inverse">
 	<div class="container">
-		<a href="home.jsp" class="navbar-brand">FIAP Motors</a>
+		<a href="home.jsp" class="navbar-brand"></a>
 		<ul class="nav navbar-nav">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown">

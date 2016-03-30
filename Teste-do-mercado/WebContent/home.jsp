@@ -11,7 +11,7 @@
 <body>
 <%@ include file="menu.jsp" %>
 <div class="container">
-	<h1>Bem vindo ao Mercado on-line Motors!</h1>
+	<h1>Bem vindo ao Mercado on-line!</h1>
 	<h6><strong>Aqui você compra e vende oque precisa!</strong></h6>
 </div>
 </body>

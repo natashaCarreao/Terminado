@@ -1,0 +1,15 @@
+127.0.0.1 - - [30/Mar/2016:17:47:54 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:17:47:57 -0300] "GET /Teste-do-mercado/menu.jsp HTTP/1.1" 500 3140
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:17:48:38 -0300] "GET /Teste-do-mercado/menu.jsp HTTP/1.1" 200 434
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:01:27 -0300] "GET /Teste-do-mercado/menu.jsp HTTP/1.1" 200 434
+127.0.0.1 - - [30/Mar/2016:18:09:38 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:09:40 -0300] "GET /Teste-do-mercado/menu.jsp HTTP/1.1" 200 434
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:10:19 -0300] "GET /Teste-do-mercado/menu.jsp HTTP/1.1" 200 434
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:12:41 -0300] "GET /Teste-do-mercado/menu.jsp HTTP/1.1" 200 423
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:15:47 -0300] "GET /Teste-do-mercado/header.jsp HTTP/1.1" 200 236
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:15:47 -0300] "GET /Teste-do-mercado/css/bootstrap.min.css HTTP/1.1" 200 121260
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:15:47 -0300] "GET /Teste-do-mercado/js/jquery-2.0.3.js HTTP/1.1" 200 242142
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:15:47 -0300] "GET /Teste-do-mercado/js/bootstrap.min.js HTTP/1.1" 200 36868
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:15:47 -0300] "GET /Teste-do-mercado/js/npm.js HTTP/1.1" 200 484
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:15:47 -0300] "GET /Teste-do-mercado/js/bootstrap.js HTTP/1.1" 200 68954
+0:0:0:0:0:0:0:1 - - [30/Mar/2016:18:16:06 -0300] "GET /Teste-do-mercado/home.jsp HTTP/1.1" 200 1176
