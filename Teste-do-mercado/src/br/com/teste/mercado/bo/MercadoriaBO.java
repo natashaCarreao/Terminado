@@ -15,9 +15,15 @@ public class MercadoriaBO {
 		return listaMercadorias = carregarListaMercadorias();
 	}
 	
+	public void vender(Mercadoria mercadoria){
+		mercadoria.setCodigo(sequence++);
+		listaMercadorias.add(mercadoria);
+	}
 	
 	
-	
+	public void comprar(){
+		
+	}
 	
 	
 	

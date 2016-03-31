@@ -30,13 +30,13 @@
 				<td> <c:out value="${merc.tipo }"/> </td>
 				<td>
 					<c:url value="MercadoriaServlet" var="link">
-						<c:param name="id" value="${merc.id }"/>
+						<c:param name="id" value="${merc.codigo }"/>
 						<c:param name="acao" value="exibir"/>
 					</c:url>
-					<a href="${link }" class="btn btn-primary">
+					<a href="#" class="btn btn-primary">
 						Comprar
 					</a>
-					<a href="${link }" class="btn btn-primary">
+					<a href="#" class="btn btn-primary">
 						Vender
 					</a>
 				</td>
@@ -52,15 +52,18 @@
 
 $(document).ready(function(){
 	
-	var acao = "listar";
+	var acao = "listarMercDisp";	
+	
+	$.post("MercadoriaServlet", {acao : "listarMercDisp"},function(data) { alert(data); });
 	
 	$.ajax({
 		type: "POST",	
-		url: $("doPost"),
+		url: '$.post("MercadoriaServlet", {acao : "listarMercDisp"})',
 		data: acao,
 		success: function(data){
 			console.log(data);
 		}
 	})
+	
 })
 </script>
