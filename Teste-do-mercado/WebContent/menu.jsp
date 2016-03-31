@@ -4,12 +4,16 @@
 		<a href="home.jsp" class="navbar-brand">Mercado On-line</a>
 		<ul class="nav navbar-right">
 			<li class="dropdown">
-				<a href="MercadoriaServlet?acao=listarMercDisp" class="dropdown-toggle" data-toggle="dropdown" >
+				<a href="listarMercadorias.jsp" class="dropdown-toggle" >
 					Ver produtos disponiveis<b class="caret"></b>
 				</a>
-				<ul class="dropdown-menu">
-					<li> <a href="MercadoriaServlet?acao=listarMercDisp">Listar</a> listarMercadorias.jsp</li>
-				</ul>	
+				
+			</li>
+			<li class="dropdown">
+				<a href="venderMercadorias.jsp" class="dropdown-toggle" >
+					Vender<b class="caret"></b>
+				</a>
+				
 			</li>
 		</ul>
 		

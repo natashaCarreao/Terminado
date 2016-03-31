@@ -38,10 +38,10 @@
 						<c:param name="id" value="${merc.codigo }"/>
 						<c:param name="acao" value="exibir"/>
 					</c:url>
-					<a href="#" class="btn btn-primary">
+					<a href="MercadoriaServlet?acao=comprar" class="btn btn-primary">
 						Comprar
 					</a>
-					<a href="#" class="btn btn-primary">
+					<a href="MercadoriaServlet?acao=vender" class="btn btn-primary">
 						Vender
 					</a>
 				</td>
@@ -53,22 +53,3 @@
 </body>
 </html>
 
-<script>
-
-$(document).ready(function(){
-	
-	var acao = "listarMercDisp";	
-	
-	$.post("MercadoriaServlet", {acao : "listarMercDisp"},function(data) {console.log(data); });
-	
-	$.ajax({
-		type: "POST",	
-		url: '$.post("MercadoriaServlet", {acao : "listarMercDisp"})',
-		data: acao,
-		success: function(data){
-			console.log(data);
-		}
-	})
-	
-})
-</script>

@@ -3,3 +3,5 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/npm.js"></script>
+<script src="js/validacao.js"></script>
+<script src="js/ajaxListarMercadorias.js"></script>
