@@ -30,7 +30,7 @@
 				<td> <c:out value="${merc.tipo }"/> </td>
 				<td>
 					<c:url value="MercadoriaServlet" var="link">
-						<c:param name="id" value="${carro.id }"/>
+						<c:param name="id" value="${merc.id }"/>
 						<c:param name="acao" value="exibir"/>
 					</c:url>
 					<a href="${link }" class="btn btn-primary">
@@ -47,3 +47,20 @@
 
 </body>
 </html>
+
+<script>
+
+$(document).ready(function(){
+	
+	var acao = "listar";
+	
+	$.ajax({
+		type: "POST",	
+		url: $("doPost"),
+		data: acao,
+		success: function(data){
+			console.log(data);
+		}
+	})
+})
+</script>

@@ -1,0 +1,17 @@
+package br.com.teste;
+
+import java.util.ArrayList;
+
+import br.com.teste.mercado.bean.Mercadoria;
+import br.com.teste.mercado.bo.MercadoriaBO;
+
+public class TesteDeMetodos {
+
+	public static void main(String[] args) {
+		
+	
+			
+			
+	}
+
+}

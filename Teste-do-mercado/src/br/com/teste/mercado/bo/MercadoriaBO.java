@@ -29,7 +29,7 @@ public class MercadoriaBO {
 		Mercadoria merc4 = new Mercadoria();
 		
 		merc1.setCodigo(sequence++);
-		merc1.setNome("Micloondas 27 litros");
+		merc1.setNome("Microondas 27 litros");
 		merc1.setPreco(700.00);
 		merc1.setQuantidade(9);
 		merc1.setTipo(Tipo.ELETRODOMESTICO);
