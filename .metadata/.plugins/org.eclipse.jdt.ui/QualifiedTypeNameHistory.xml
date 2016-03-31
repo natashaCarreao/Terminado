@@ -6,7 +6,7 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
 <fullyQualifiedTypeName name="br.com.teste.mercado.bo.MercadoriaBO"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="br.com.teste.mercado.bean.Mercadoria"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.HttpMethodConstraint"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="br.com.teste.mercado.bean.Mercadoria"/>
 </qualifiedTypeNameHistroy>

@@ -12,6 +12,11 @@
 	<%@ include file="menu.jsp" %>
 	<div class="container">
 		<h1>Produtos disponiveis</h1>
+		<c:if test="${not empty msg }">
+		<h4 class="alert alert-success">
+			<c:out value="${msg }"/>
+		</h4>
+		</c:if>
 		<table class="table" id="tabelaMercadorias">
 			<tr>
 				<th>Id:</th>
@@ -54,7 +59,7 @@ $(document).ready(function(){
 	
 	var acao = "listarMercDisp";	
 	
-	$.post("MercadoriaServlet", {acao : "listarMercDisp"},function(data) { alert(data); });
+	$.post("MercadoriaServlet", {acao : "listarMercDisp"},function(data) {console.log(data); });
 	
 	$.ajax({
 		type: "POST",	

@@ -4,7 +4,7 @@
 		<a href="home.jsp" class="navbar-brand">Mercado On-line</a>
 		<ul class="nav navbar-right">
 			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+				<a href="MercadoriaServlet?acao=listarMercDisp" class="dropdown-toggle" data-toggle="dropdown" >
 					Ver produtos disponiveis<b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">

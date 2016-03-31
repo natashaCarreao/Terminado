@@ -1,0 +1,30 @@
+function validacao(){
+	
+	var name = document.getElementById("nome");
+	alert(nome);
+	console.log(name);
+	
+	var erro = $("#erro").val();
+	
+	if ($("#nome").val() == ""){		
+		erro.innerHTML = "O campo nome é obrigatório";
+	}
+	
+	if ($("#quantidade").val() == ""){		
+		erro.innerHTML = "O campo quatidade é obrigatório";
+	}
+	
+	if ($("#preco").val() == ""){		
+		erro.innerHTML = "O campo preço é obrigatório";
+	}
+	
+	if($("#selecionaTipo").val("selecione")){
+		erro.innerHTML = "Selecione um tipo";
+	}
+	
+}
+
+function limpaErro(){
+	var erro =  $("#erro").val();
+	erro.innerHTML = "";
+}

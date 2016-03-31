@@ -8,7 +8,7 @@ import br.com.teste.mercado.enumeration.Tipo;
 public class MercadoriaBO {
 	
 	private ArrayList<Mercadoria> listaMercadorias = new ArrayList<Mercadoria>();
-	private static int sequence = 1;
+	private static int sequence = 0;
 	
 	public ArrayList<Mercadoria> buscarTodas(){
 		
@@ -20,9 +20,19 @@ public class MercadoriaBO {
 		listaMercadorias.add(mercadoria);
 	}
 	
+	public Mercadoria buscaPorCodigo(int codigo){
+		for (Mercadoria merc: listaMercadorias){
+			if (merc.getCodigo() == codigo){
+				return merc;
+			}
+		}
+		return null;
+	}
 	
-	public void comprar(){
-		
+	
+	public void comprar(int codigo){
+		Mercadoria merc = buscaPorCodigo(codigo);
+		listaMercadorias.remove(codigo);
 	}
 	
 	

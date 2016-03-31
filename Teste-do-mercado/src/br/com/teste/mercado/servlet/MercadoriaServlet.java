@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.teste.mercado.bean.Mercadoria;
 import br.com.teste.mercado.bo.MercadoriaBO;
+import br.com.teste.mercado.enumeration.Tipo;
 
 /**
  * Servlet implementation class MercadoriaServlet
@@ -19,7 +20,6 @@ import br.com.teste.mercado.bo.MercadoriaBO;
 @WebServlet("/MercadoriaServlet")
 public class MercadoriaServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
 	private MercadoriaBO mercadoriaBO = new MercadoriaBO();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -36,7 +36,13 @@ public class MercadoriaServlet extends HttpServlet {
 				retorno  = "listarMercadorias.jsp";
 				break;
 			case "vender":
-				retorno = "";	
+				vender(request);
+				retorno = "listarMercadorias.jsp";	
+				break;
+			case "compar" :
+				comprar(request);
+				retorno = "listarMercadorias.jsp";
+				break;
 		}
 		
 		request.getRequestDispatcher(retorno).forward(request, response);
@@ -47,7 +53,47 @@ public class MercadoriaServlet extends HttpServlet {
 		request.setAttribute("lista", lista);
 	}
 	
+	private void comprar(HttpServletRequest request){
+		
+		int codigo = Integer.parseInt(request.getParameter("codigo"));
+		mercadoriaBO.comprar(codigo);
+		request.setAttribute("msg", "Mercadoria incluida em seu carrinho de compras!");
+	}
+	
 	private void vender(HttpServletRequest request){
+		
+		String codigo = request.getParameter("codigo");
+		String nome = request.getParameter("nome");
+		//int tipo = Integer.parseInt(request.getParameter("tipo"));
+		//int quantidade = Integer.parseInt(request.getParameter("quatidade"));
+		double preco = Double.parseDouble(request.getParameter("preco"));
+		
+		Mercadoria merc = new Mercadoria();
+		merc.setNome(nome);
+		merc.setPreco(preco);
+		//merc.setQuantidade(quantidade);
+		/*
+		switch (tipo) {
+		case 1:
+			merc.setTipo(Tipo.ELETRODOMESTICO);
+			break;
+		case 2:
+			merc.setTipo(Tipo.ELETRONICO);
+			break;
+		case 3:
+			merc.setTipo(Tipo.MOVEIS);
+			break;
+		case 4:
+			merc.setTipo(Tipo.SMARTPHONE);
+			break;
+		}*/
+		
+		if(codigo.equals("")){
+			mercadoriaBO.vender(merc);
+			request.setAttribute("msg", "Mercadoria inserida com sucesso.");
+		}else{
+			request.setAttribute("msg", "Infelizmente, houve algum erro durante a execussão. Tente novamente.");
+		}
 		
 	}
 }
